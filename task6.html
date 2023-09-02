@@ -14,31 +14,35 @@
             display: inline-block;
             width: 100px;
         }
+        h6 
+        {
+            margin-top: 1px;
+        }
     </style>
 </head>
 <body>
     <div>
         <form action="">
-            <h2>Online Job Registration portal</h2>
-            <p>Register yourself to get new job updates</p>
+            <p style="font-size: 25px;">Online Job Registration portal<br>
+                <span style="font-size:10px">Register yourself to get new job updates</span></p>
             <table border="0">
                 <tr>
                     <th><label for=""> Full Name:</label></th>
                     <td colspan="2"><input type="text" placeholder="first name">
-                    <input type="text" placeholder="last name"></td>
+                    <input type="text" placeholder="last name" required></td>
                 </tr>
                 <tr >
                     <th rowspan="4"><label for="" >Address:</label></th>
-                    <td colspan="2"><textarea name="" id="" cols="60" rows="1" placeholder="street Address"></textarea></td>
+                    <td colspan="2"><textarea name="" id="" cols="60" rows="1" placeholder="street Address" required></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><textarea name="" id="" cols="60" rows="1" placeholder="street Address Line2"></textarea></td>
+                    <td colspan="2"><textarea name="" id="" cols="60" rows="1" placeholder="street Address Line2" required></textarea></td>
                 </tr>
                 <tr>
-                    <td><textarea name="" id="" cols="35" rows="1" placeholder="city"></textarea></td>
-                    <td><input type="text" placeholder="state"></td>
+                    <td><textarea name="" id="" cols="35" rows="1" placeholder="city" required></textarea></td>
+                    <td><input type="text" placeholder="state" required></td>
                 </tr>
-                <tr><td><input type="number" placeholder="pincode"></td>
+                <tr><td><input type="number" placeholder="pincode" required></td>
                 <td><select name="" id="" >
                     <option value="">Please Select</option>
                     <option value="">India</option>
@@ -46,28 +50,28 @@
                 </tr>
                 <tr>
                     <th><label for="">Phone number:</label></th>
-                        <td colspan="2"><input type="number" placeholder="contry code"> -
-                        <input type="number" placeholder="phone number"></td>
+                        <td colspan="2"><input type="number" placeholder="contry code" required> -
+                        <input type="number" placeholder="phone number" required></td>
                 </tr>
                 <tr>
                     <th><label for="">Mobile:</label></th>
-                    <td><input type="number" placeholder="phone number"></td>
+                    <td><input type="number" placeholder="phone number" required></td>
                 </tr>
                 <tr>
                     <th><label for="">Email:</label></th>
-                    <td><input type="email" placeholder="ex:myname@email.com"></td>
+                    <td><input type="email" placeholder="ex:myname@email.com" required></td>
                 </tr>
                 <tr>
                     <th><label for="">Cover letter:</label></th>
-                    <td><textarea name="" id="" cols="35" rows="5" placeholder="Describe youreself in brief(max.450 characters)"></textarea></td>
+                    <td><textarea name="" id="" cols="35" rows="5" required placeholder="Describe youreself in brief(max.450 characters)"></textarea></td>
                 </tr>
                 <tr>
                     <th><label for="">Resume</label></th>
-                    <td><input type="file"></td>
+                    <td><input type="file" required></td>
                 </tr>
                 <tr>
                     <th><label for="">Declaration:</label></th>
-                    <td><input type="checkbox">The above information <br> is filled by me is true.
+                    <td><input type="checkbox" required>The above information <br> is filled by me is true.
                     I also<br> accept all the<br> terms and conditions</td>
                 </tr>
                 <tr>
