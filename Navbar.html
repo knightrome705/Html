@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        background-color: blue;
+        height: 80px;
+    }
+    ul{
+        display: flex;
+        float: right;
+        
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    li{
+        list-style: none;
+        position: relative;
+    }
+    img{
+        border-radius: 1.5rem;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    li a:hover{
+        background-color: gray;
+        padding: 10px;
+        border-radius: 1rem;
+        
+    }
+    ul ul{
+        display:none;
+        position: absolute;
+        top: 100;
+        left: 0;
+        background-color: green;
+        color: red;
+    }
+    li:hover > ul{
+        display:block;
+        padding-left: 10px;
+    }
+</style>
+<body>
+    <Nav>
+        <img src="./image/floweimage.jpeg"  height="50px" width="70px">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Service</a>
+            <ul>
+                <li><a href="#">Service1</a></li>
+                <li><a href="#">Service2</a></li>
+            </ul>
+            </li>
+        </ul>
+
+    </Nav>
+    
+</body>
+</html>

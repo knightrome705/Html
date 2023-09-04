@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: black;
+            height: 700px;
+            background-image: url(/image/mysteak.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+        ul{
+            display: flex;
+            text-decoration: none;
+            float: right;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .demo{
+            margin-left: 50px;
+            margin-top: 20px;
+            opacity: 1;
+        }
+        li a:hover{
+            text-decoration: underline yellow;
+        }
+        ul ul{
+            display: none;
+        }
+        li:hover>ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <NAv>
+        <img  class="demo" src="/image/steaklogo.png" height="80px" width="100px" alt="#">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">EN</a>
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Malayalam</a></li>
+
+            </ul></li>
+        </ul>
+
+
+    </NAv>
+    
+</body>
+</html>

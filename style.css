@@ -1,0 +1,23 @@
+
+h1{
+    background-color: grey;
+    color: red;
+    text-align: center;
+    text-shadow: 5px 3px green;
+    border: 3px solid blue;
+}
+p{
+    background-image: url(./image/floweimage.jpeg);
+    background-repeat: no-repeat;
+    background-size :cover;
+    background-attachment: fixed;
+    color: blue;
+    font-size: 25px;
+    text-align: justify;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    border-top: 10px dashed red;
+    border-right: 10px double green;
+    border-bottom:10px dotted cyan;
+    border-left: 10px solid orange;
+}
