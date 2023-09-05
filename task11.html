@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 135px;
+            background-color:black;
+        }
+        ul{
+            display: flex;
+            float: right;
+        }
+        ul ul{
+            display: block;
+        }
+        a{
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        div{
+            /* border: 2px solid black; */
+            height: 300px;
+            width: 250px;
+        
+        }
+        #five{
+            list-style-type: circle;
+            
+        }
+       </style>
+</head>
+<body>
+    <nav>
+        <p id="first">Website Name</p>
+        <p id="second">Motive of your Website</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">A Page</a></li>
+            <li><a href="#">Another Page</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <br>
+    <img src="/image/floweimage.jpeg" alt="floweimage" height="200px" width="900px">
+    <div style="display: flex; height: 300px;width: 900px; border: 2px solid green;margin: 20px;" >
+        <div  style="border: 2px solid yellow;width: 700px;">
+            <h2>Welcome to the website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos libero voluptatibus et culpa fugit error vero eum atque veritatis a, dolor recusandae, ad mollitia, aut laborum quisquam placeat eaque.</p>
+        </div>
+        <div style="border: 3px solid green;border-radius: 1rem;">
+            <h3>Latest News</h3>
+            <p style="color: blue;">SOME TEEXT GOES HERE</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ducimus.</p>
+            <a href="#" style="color: greenyellow;">Read more</a>
+
+        </div>
+    </div>
+    <div style="border: 2px solid green; margin: 20px;width: 900px; display: flex;">
+        <div style="border: 2px solid yellow;width: 700px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est, saepe porro cupiditate modi quod labore nulla soluta impedit commodi expedita doloribus alias culpa? Maiores repudiandae atque reprehenderit tenetur laborum?</p>
+        </div>
+        <div style="border: 2px solid black;border-radius: 1rem;">
+            <p>Useful Links</p>
+        </div>
+    </div>
+    <div style="border: 2px solid blue;margin: 20px;width: 900px;display: flex;">
+        <div style="width: 700px;">
+            <h3 style="margin: 20px;font-size: 20px;color: lightblue;">Some highlights..</h3>
+            <p>Some text goes here</p>
+            <ul id="five">
+                <li>some text goes here</li>
+            </ul>
+        </div>
+        <div style="border: 2px solid pink;border-radius: 1rem; height: 200px;">
+                <h3>Search</h3>
+                <input type="text"><input type="button" value="Search">
+        </div>
+    </div>
+</body>
+</html>
