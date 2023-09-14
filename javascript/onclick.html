@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Martin</h1>
+    <div class="button bg-primary" onclick="myfunction()">martin</div>
+    <h2 id="two" onmousemove="myover()">hello user</h2>
+    <h3 id="three">Stay alert!!</h3>
+    <input type="text" placeholder="Enter a value" onkeyup="keyup()">
+    <input type="text"placeholder="Enter your name" id="four" onchange="change()">
+    <script>
+        function myfunction(){
+            let val=document.getElementById("one");
+            val.style.backgroundColor="red";
+        }
+        function myover(){
+            let val1=document.getElementById("two");
+            val1.style.backgroundColor="blue";
+        }
+        function keyup(){
+            let val2=document.getElementById("three");
+            val2.style.fontSize="50px";
+
+        }
+        function change(){
+          let val3=document.getElementById("four").value;
+            alert("Hello"+val3);
+        }
+
+
+    </script>
+</body>
+</html>
