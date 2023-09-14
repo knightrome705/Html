@@ -7,28 +7,35 @@
 </head>
 <body>
     <h1 id="one">Martin</h1>
-    <div class="button bg-primary" onclick="myfunction()">martin</div>
-    <h2 id="two" onmousemove="myover()">hello user</h2>
+    <input type="button" onclick="myFunction()" value="Click_me">
+    <!-- <div class="button bg-primary" onclick="myfunction()">martin</div> -->
+    <h2 id="two" onmouseover="myOver()" onmouseout="myOverout()">hello user</h2>
     <h3 id="three">Stay alert!!</h3>
     <input type="text" placeholder="Enter a value" onkeyup="keyup()">
-    <input type="text"placeholder="Enter your name" id="four" onchange="change()">
+    <br>
+    <br>
+    <input type="text"placeholder="Enter your name" id="four" onchange="onChange()">
     <script>
-        function myfunction(){
+        function myFunction(){
             let val=document.getElementById("one");
             val.style.backgroundColor="red";
         }
-        function myover(){
+        function myOver(){
             let val1=document.getElementById("two");
-            val1.style.backgroundColor="blue";
+            val1.style.color="blue";
         }
         function keyup(){
             let val2=document.getElementById("three");
             val2.style.fontSize="50px";
 
         }
-        function change(){
+        function onChange(){
           let val3=document.getElementById("four").value;
             alert("Hello"+val3);
+        }
+        function myOverout(){
+            let val4=document.getElementById("two");
+            val4.style.color="orange";
         }
 
 
