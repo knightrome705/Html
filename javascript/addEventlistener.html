@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ten"  onmouseover="myfunction()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, corporis!</h1>
+<script>
+    function myfunction(){
+        let data=document.getElementById("ten");
+    data.addEventListener("mouseover",function mouseover(){
+        data.style.fontSize="50px";
+    });
+    data.addEventListener("mouseout", function click(){
+        data.style.fontSize="10px";
+    });
+    }
+</script>
+
+    
+</body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="myLoad()">
     <h1 id="one">Martin</h1>
     <input type="button" onclick="myFunction()" value="Click_me">
     <!-- <div class="button bg-primary" onclick="myfunction()">martin</div> -->
@@ -36,6 +36,9 @@
         function myOverout(){
             let val4=document.getElementById("two");
             val4.style.color="orange";
+        }
+        function myLoad(){
+            alert("wait");
         }
 
 
