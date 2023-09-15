@@ -9,12 +9,12 @@
     </style>
 </head>
 <body>
-   <center> <img  src="/image/bulb-off.jpeg" height="100px" width="200px" alt="bulb_image" onclick="click()"></center>
+    <img id="one" onmouseover="myClick()" src="/image/bulb-off.jpeg" height="100px" width="200px" alt="bulb_image" >
     <script>
-        function click(){
-            let id=document.getElementById("one");
+        function myClick(){
+            const id=document.getElementById("one");
             if(id.src.match("bulb-off")){
-                id.src="/image/bulb-on.jpeg";
+                id.src="/image/onbulb.jpeg";
             }else{
                 id.src="/image/bulb-off.jpeg";
             }
