@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function validateEmail(email) {
+         let regex = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+         if (regex.test(email)) {
+            console.log("Email is valid"+email);
+         } else {
+            console.log("Email is not  valid"+email); 
+         }
+      }
+      validateEmail("123martin@gmail.com");
+      document.write("<br>");
+      validateEmail("132gmail");
+    </script>
+    
+    
+</body>
+</html>
